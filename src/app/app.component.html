@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <app-product-form (objEmitter)="onObjHandler($event)"></app-product-form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <app-product-template [pInput]="product" *ngFor="let product of productArr"
+      (statusEmitter)="changeStatus($event)"></app-product-template>
+    </div>
+  </div>
+</div>

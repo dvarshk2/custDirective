@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-body">
+        <h4>{{pInput.pname}}</h4>
+        <p>{{pInput.pdetails}}</p>
+        <p>{{pInput.status}}</p>
+        <button class="btn btn-success mr-2"(click)="onStatusHandler('In Progress', pInput.id)">In Progress</button>
+        <button class="btn btn-success mr-2"(click)="onStatusHandler('Dispatched', pInput.id)">Dispatched</button>
+        <button class="btn btn-success mr-2"(click)="onStatusHandler('Delivered', pInput.id)">Delivered</button>
+    </div>
+</div>
